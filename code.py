@@ -13,6 +13,21 @@ print(data)
 pickle.dump(data, open("data.dat", "wb"))
 
 # Removing "Number 3"
-print("Modified List")
+print("Removed item List")
 data.remove("Number 3")
+print(data)
+
+#Adding number 4 to the end of the list
+pickle.dump(data, open("data.dat", "wb"))
+print("Added new item List")
+data.append("Number 4")
+print(data)
+
+# Added and Removed another set of numbers
+print("Adding number 5")
+data.append("Number 5")
+print(data)
+
+print("Removing number 5")
+data.remove("Number 5")
 print(data)
